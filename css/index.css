@@ -380,7 +380,7 @@ selectors in that list  */
   opacity: 0;
 }
 
-/* For Line 2, translate Y to give a cross */
+/* For Line 3, translate Y to give a cross */
 .nav-toggle-btn.active .line-3 {
   transform: translateY(-10px) rotate(-45deg);
 }
@@ -420,3 +420,106 @@ selectors in that list  */
   font-family: var(--ff-poppins);
   font-weight: var(--fw-500);
 }
+
+/* For the Slide down button */
+.slide-down-btn { display: none; }
+
+/* For the Hero */
+.hero {
+  background-color: var(--cultured);
+  padding-block-start: calc(var(--section-padding) + 30px);
+}
+
+/* Hero Banner */
+.hero-banner {
+  margin-block-end: 60px;
+  max-height: 500px;
+  border-radius: var(--radius-10);
+  margin-inline: auto;
+}
+
+/* Title of Hero */
+.hero-title { margin-block: 10px 20px; }
+
+.hero-list { margin-block-end: 25px; }
+
+.hero-list .list-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  color: var(--black);
+  font-size: var(--fs-17);
+  padding-block: 6px;
+}
+
+.hero-list .list-link:is(:hover, :focus) { color: var(--theme-color); }
+
+.hero-list .list-link .span,
+.hero-list .list-link ion-icon { transition: var(--transition); }
+
+.hero-list .list-link:is(:hover, :focus) ion-icon { transform: rotate(-45deg); }
+
+/* Experience List */
+.exp-list .list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  font-family: var(--ff-poppins);
+  line-height: 1.4;
+}
+
+.exp-list .list-item:not(:last-child) { margin-block-end: 15px; }
+
+.exp-list .strong {
+  color: var(--black);
+  font-size: var(--fs-35);
+  font-weight: var(--fw-600);
+}
+
+.exp-list .span { font-size: var(--fs-13); }
+
+/* Skills */
+
+.skills-banner {
+    display:none;
+}
+
+.skills {
+    background-color:var(--black);
+}
+
+.skills .section-title {
+    color: var(--white);
+}
+
+.skills .section-text {
+    color: var(--gray-x-11);
+    margin-block: 40px 45px;
+}
+
+.skills-item:not(:last-child) { margin-block-end: 25px; }
+
+.skills-list .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  font-family: var(--ff-poppins);
+  margin-block-end: 10px;
+}
+
+
+.skill-title {
+    font-size: unset;
+    font-weight: unset;
+  }
+  
+  .skills .progress-box { background-color: var(--white_10); }
+  
+  .skills .progress {
+    background-color: var(--theme-color);
+    height: 8px;
+  }
+  
